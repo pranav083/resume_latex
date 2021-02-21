@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Pranav Kumar
+% Based off of: https://github.com/pranav083/resume_latex
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Pranav \textbf{Kumar}} \\ \vspace{1pt}
+    \href{mailto:pranavkumar@tuta.io}{\underline{pranavkumar@tuta.io}} $|$
+    \href{https://linkedin.com/in/pranav083}{\underline{linkedin.com/in/pranav083}} $|$
+    \href{https://github.com/pranav083}{\underline{github.com/pranav083}} $|$ 
+    \small{\underline{+91-9614436659}}   
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Job Experience/ Internship}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Futuristic Labs Pvt. Ltd.}{Jan. 2020 -- Present}
+      {Embedded Firmware Engineer}{Hyderabad, IN}
+      \resumeItemListStart
+        \resumeItem{Development of embedded solution form different Hardware and IOT based appliances. }
+        \resumeItem{Development of bridge between RTOS Board and Compute Module. }
+        \resumeItem{Working with embedded systems to have complete deployable system on device.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+  % % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Google Summer Of Code(GSOC)}{June 2019 $-$ Aug. 2019}
+      {BeagleBoard.Org(Open Source Contributer) }{Chandigarh, IN}
+      \resumeItemListStart
+        \resumeItem{Using BeagleBone and 74hc299 shift Register, provided a reference design for bi-directional commincation for multiple peripherials.}
+        \resumeItem{For more Infomation see Project \textbf{\href{https://elinux.org/Beagleboard_gsoc_2019_bi-directional_progress}{\underline{Page}}} and Beaglebone official blog \textbf{\href{https://beagleboard.org/blog/2019-06-02-beagleboard-org-community-kicks-off-gsoc-2019-with-four-projects}{\underline{Page}}}.}
+        \resumeItem{Youtube \textbf{\href{https://www.youtube.com/watch?v=ZZDT6jNslqw&list=PLttoix_9Us2yHM4zNr08ynm4iwXZTgxam}{\underline{Playlist}}} and Github \textbf{\href{https://github.com/pranav083/pocket_beagle-work}{\underline{Code}}}.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {e-YRC (IIT Bombay)}{Oct. 2018 $-$ Feb. 2019}
+      {Team Leader \& Open Source Contributer}{Chandigarh, IN}
+      \resumeItemListStart
+        \resumeItem{Using OpenCV for object Detection and ArUco Markers. Making a lighter and less complex multifunctional line Following algorithm using FSM(Finite State Machine).}
+        \resumeItem{Follow the links Youtube \textbf{\href{https://youtu.be/FhUvQlrLWxc}{\underline{Video}}} and Github \textbf{\href{https://github.com/pranav083/FSM_code}{\underline{Code}}}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Embedded Product development for Saksham Creative Edu.(NGO)}{Sept. 2018 $-$ Dec. 2018}
+    {Student Lead }{Chandigarh, IN}
+    \resumeItemListStart
+      \resumeItem{Designed and build several embedded based product for NGO by managing resourses and Team of around 20 team members.Follow up this Github Link for More Info \textbf{\href{https://github.com/pranav083/Tinkering_project}{\underline{Codes and Document}}}.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UIET, Panjab University}{Chandigarh, IN}
+      {B.E in Electronics and Communication Engineering }{\textit{CGPA: 7.3} May 2016 -- Sept. 2020}
+    \resumeSubheading
+      {Delhi Public School}{Ranchi, IN}
+      {Higher Secondary, CBSE }{\textit{90.2 \%} May 2015}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Stepper$\_$STSPIN220$-$library} $|$ \emph{C++, Arduino IDE, Driver, STSPIN220}}{Dec. 2020}
+          \resumeItemListStart
+            \resumeItem{Development of the generic driver for 1/256 steps stepper driver \underline{\textbf{\href{https://github.com/pranav083/Stepper_STSPIN220-library}{Link}}}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{QuadCopter PX4 ROS} $|$ \emph{MavROS, ROS, Python, Git }}{Oct. 2019}
+          \resumeItemListStart
+            \resumeItem{worked on the simulation of the px4 drones using Mavros and Mavlink in ROS and Gazebo \underline{\textbf{\href{https://github.com/pranav083/Ros_projects}{Link}}}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}\vspace{-2pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Embedded C, OpenCV, Embedded Linux, Linux, ROS} \\
+     \textbf{Hardware Tools}{: ARM, I2C, SPI, CAN, Modbus, UART, BeagleBone, Compute Modules(Rpi CM4), Markers, ESP32} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, MenderIO, LvGL, MqTT} \\
+     \textbf{Hardware }{: Steppers, Circuit Desiging, Stepper Drivers(MA86xxx, DRV8825) etc.} \\
+     \textbf{Familiar}{: Algorithms, \LaTeX, Shell, Yocto, ESP-IDF}
+    }}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Achievements And Awards}\vspace{-2pt}
+  \begin{itemize}
+    \item \vspace{-0pt}{2019  $-$ Robot Operating System Conference \textbf{ROSCon, Macau, China Scholarship Holder}}
+    \item \vspace{-9pt}{2019  $-$  Awardee for excellence in Technology field by \textbf{Mrs. Kirron Kher (MP ,Chandigarh)}}    
+    \item \vspace{-9pt}{2019  $-$  \textbf{1st} at Design and Idea Competition by IIC, Panjab University at Chandigarh}   
+    \item \vspace{-9pt}{2019  $-$  \textbf{Mentor} of winning team at \textbf{Smart India Hackathon-2019} by  \underline{\textbf{\href{https://www.kokuyocamlin.com/}{Kokuyo Camlin}}} at IIT Hyd.}  
+    % \item \vspace{-6pt}{2019	$-$  Poster presentation at Chandigarh Science Congress(CHESCON)}   
+    \item \vspace{-9pt}{2018	$-$  Winner of Pocket Beagle at \textbf{Mouser electronics} event at \textbf{IIT Roorkee} }
+  \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Organization And Events
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Community And Events }
+  \begin{itemize}
+    \item \vspace{-0pt}{2018 $\&$ 2019 Speaker at \textbf{Software Freedom Day} } 
+    \item \vspace{-9pt}{Speaker \& Organizer in Embbeded Community in the Chandigarh Area, See \textit{\textbf{\href{https://drive.google.com/drive/folders/1DxT2_Fzj40LQEiOTwckY73_On0V8weF_?usp=sharing}{\underline{Gallery Link}}}}.}
+  \end{itemize} 
+  %-------------------------------------------
+\end{document}
