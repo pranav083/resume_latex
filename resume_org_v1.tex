@@ -55,7 +55,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  % \vspace{-4pt}\scshape\raggedright\large
+  \centering\scshape\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -115,18 +116,71 @@
 \begin{center}
     {\Huge \scshape Pranav \textbf{Kumar}} \\ \vspace{1pt}
     \href{https://pranav083.github.io/}{\underline{Personal-Site}} $|$
-    \href{mailto:pranavkumar@tuta.io}{\underline{pranavkumar@tuta.io}} $|$
+    \href{mailto:pranavkumar083@proton.me}{\underline{pranavkumar083@proton.me}} $|$
     \href{https://linkedin.com/in/pranav083}{\underline{linkedin.com/in/pranav083}} $|$
     \small{\underline{+91-9614436659}}   
 \end{center}
 
-%-----------EXPERIENCE-----------
-\section{Job Experience/ Internship}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UIET, Panjab University}{Chandigarh, IN}
+      % {B.E in Electronics and Communication Engineering }{\textit{CGPA: 7.3} May 2016 -- Sept. 2020}
+      {B.E in Electronics and Communication Engineering }{May 2016 -- Sept. 2020}
+
+    \resumeSubheading
+      {Delhi Public School}{Ranchi, IN}
+      {Higher Secondary, CBSE }{\textit{90.2 \%} May 2015}
+  \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RELEVANT COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Relevant Coursework}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item \hspace{0pt}{
+   \hspace{-4pt}{Basic Electronic Devices and Circuits, Operating Systems, Computer Architecture, 
+   Data Structure and Algorithm, Microprocessors and Microcontrollers,  Digital Electronics, Verilog, System Verilog, Linear Integrated Circuits
+   and its Applications (IC),  Switching Theory and Logical Design, Pulse and Digital Circuits(PDC),
+   Power Electronics, Electro Magnetic Fields, Power Electronic Controller Drives, Digital Signal
+   Processing (DSP),Digital Control Systems} \\
+  }}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH INTEREST
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Interest}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item \hspace{0pt}{
+   \hspace{-4pt}{Electronic Devices and Circuits, Digital Electronics, Robotics,Autonomous systems design, Robotics, Computer Architecture for a variety of emerging Applications, Programmable Logic (FPGA), Embedded System
+   Design, Computer Hardware Design,  Switching Theory and Logical Design, Microprocessors and Microcontrollers, Programming Power Electronic Controller Drives, Digital Control Systems} \\
+  }}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Job / Research Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
+    {ARTPARK @IISc, Bangalore}{Arm4, BLDC-drivers, STM32, TI, CAN, FOC, ROS}
+    {Embedded System Engineer}{May 2023 -- Present , Bangalore, IN}
+    \resumeItemListStart
+      \resumeItem{Working Under Supervision of \textbf{Prof. Shishir N. Y. Kolathaya}}
+      \resumeItem{Development of System design of Quadruped robot.}
+      \resumeItem{Development of firmware and hardware of legged robot.}
+      \resumeItem{Responsible for the development of Communication stack of robot.}
+    \resumeItemListEnd
+
+    \resumeSubheading
     {Flux Auto Pvt. Ltd.}{ARMm7, FreeRTOS, EclipseIDE, STM32, TI, BLDC, CAN, I2C, ROS}
-    {Embedded Firmware Engineer}{June 2021 -- March 2023, Bangalore, IN}
+    {Embedded System Engineer}{June 2021 -- March 2023, Bangalore, IN}
     \resumeItemListStart
       \resumeItem{Development of Generic solution for making retrofit kit for vehicle to make it autonomous.}
       \resumeItem{Worked on Software and Hardware solution for Off-road and Industrial vehicle.}
@@ -146,7 +200,7 @@
         \resumeItem{Development of bridge between RTOS Board and Compute Module. }
         \resumeItem{Working with embedded systems with safety constrain in it realted to thermal etc.}
       \resumeItemListEnd
-      
+  \resumeSubHeadingListEnd    
 % -----------Multiple Positions Heading-----------
   %  \resumeSubSubheading
   %   {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -156,7 +210,11 @@
   %   \resumeItemListEnd
   % % \resumeSubHeadingListEnd
 %-------------------------------------------
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Internship}
+  \resumeSubHeadingListStart
     \resumeSubheading
       {Google Summer Of Code(GSOC)}{Device Tree, Kernel Module, PRU, ARMa8, Embedded C}
       {BeagleBoard.Org(Open Source Contributer) }{June $-$ Aug. 2019, Chandigarh, IN}
@@ -172,7 +230,7 @@
       \resumeItemListStart
         \resumeItem{Making a lighter and less complex multifunctional line Following algorithm using FSM(Finite State Machine).}
         \resumeItem{Using OpenCV for object Detection and ArUco Markers. }
-        \resumeItem{Follow the links Youtube \textbf{\href{https://youtu.be/FhUvQlrLWxc}{\underline{Video}}} and Github \textbf{\href{https://github.com/pranav083/FSM_code}{\underline{Code}}}.}
+        \resumeItem{Follow the links Youtube \textbf{\href{https://youtu.be/RxFSsqW_D48}{\underline{Video}}} and Github \textbf{\href{https://github.com/pranav083/FSM_code}{\underline{Code}}}.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -186,21 +244,9 @@
 
   \resumeSubHeadingListEnd
 
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}\vspace{-2pt}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C/C++, Python, Embedded C, OpenCV, Embedded Linux, Linux} \\
-     \textbf{Hardware Tools}{: ARM, I2C, SPI, CAN, Modbus, UART, BeagleBone, Compute Modules(Rpi CM4),  ESP32} \\
-     \textbf{Developer Tools}{: Git, Docker, TravisCI, LvGL, MqTT, ROS, FreeRTOS} \\
-     \textbf{Hardware }{: STM32Hxx, TI, Steppers, BLDC,  etc.} \\
-     \textbf{Familiar}{: Algorithms, \LaTeX, Shell, Yocto, ESP-IDF}
-    }}
-\end{itemize}
-
-%-----------PROJECTS-----------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
     \resumeSubHeadingListStart
 
@@ -221,30 +267,31 @@
       % \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {UIET, Panjab University}{Chandigarh, IN}
-      % {B.E in Electronics and Communication Engineering }{\textit{CGPA: 7.3} May 2016 -- Sept. 2020}
-      {B.E in Electronics and Communication Engineering }{May 2016 -- Sept. 2020}
 
-    \resumeSubheading
-      {Delhi Public School}{Ranchi, IN}
-      {Higher Secondary, CBSE }{\textit{90.2 \%} May 2015}
-  \resumeSubHeadingListEnd
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROGRAMMING SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}\vspace{-2pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Embedded C, OpenCV, Embedded Linux, Linux} \\
+     \textbf{Hardware Tools}{: ARM, I2C, SPI, CAN, Modbus, UART, BeagleBone, Compute Modules(Rpi CM4),  ESP32} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, LvGL, MqTT, ROS, FreeRTOS} \\
+     \textbf{Hardware }{: STM32H7x, STM32G4x, TI, Steppers, BLDC, FOC etc.} \\
+     \textbf{Familiar}{: Algorithms, \LaTeX, Shell, Yocto, ESP-IDF}
+    }}
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Achievements
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Achievements And Awards}\vspace{-2pt}
   \begin{itemize}
-    \item \vspace{-0pt}{2019  $-$ Robot Operating System Conference \textbf{ROSCon, Macau, China Scholarship Holder}}
+    \item \vspace{-0pt}{2019  $-$ Robot Operating System Conference \textbf{ROSCon-19, Macau, China Scholarship Holder}}
     \item \vspace{-9pt}{2019  $-$  Awardee for excellence in Technology field by \textbf{Mrs. Kirron Kher (MP ,Chandigarh)}}    
     \item \vspace{-9pt}{2019  $-$  Got \textbf{1st} Award at Design and Idea Competition by IIC, Panjab University at Chandigarh}   
     \item \vspace{-9pt}{2019  $-$  \textbf{Mentor} of winning team at \textbf{Smart India Hackathon-2019} by  \underline{\textbf{\href{https://www.kokuyocamlin.com/}{Kokuyo Camlin}}} at IIT Hyd.}  
-    % \item \vspace{-6pt}{2019	$-$  Poster presentation at Chandigarh Science Congress(CHESCON)}   
+    % \item \vspace{-9pt}{2019	$-$  Poster presentation at Chandigarh Science Congress(CHESCON)}   
     \item \vspace{-9pt}{2018	$-$  Winner of Pocket Beagle at \textbf{Mouser electronics} event in \textbf{IIT Roorkee} }
   \end{itemize}
 
@@ -253,8 +300,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Community And Events }
   \begin{itemize}
-    \item \vspace{-0pt}{2018 $\&$ 2019 Speaker at \textbf{Software Freedom Day} } 
+    \item \vspace{-0pt}{2018 $\&$ 2019 Speaker at \underline{\textbf{\href{https://www.softwarefreedomday.in/Archive}{Software Freedom Day}}},Panjab University } 
     \item \vspace{-9pt}{Speaker \& Organizer in Embbeded Community in the Chandigarh Area, See \textit{\textbf{\href{https://drive.google.com/drive/folders/1DxT2_Fzj40LQEiOTwckY73_On0V8weF_?usp=sharing}{\underline{Gallery Link}}}}.}
+    \item \vspace{-9pt}{Community Head of Embedded Telegram Group : \underline{\textbf{\href{https://t.me/rosandrobotic}{Link}}}}
+    \item \vspace{-9pt}{Poster presentation on FSM at Chandigarh Science Congress (\textbf{CHESCON})}
   \end{itemize} 
   %-------------------------------------------
   \begin{itemize}[leftmargin=0.15in, label={}]
