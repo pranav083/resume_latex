@@ -1,0 +1,131 @@
+\documentclass[10pt, letterpaper]{article}
+
+% ----- Packages and Custom Settings -----
+\usepackage[top=1cm, bottom=1cm, left=1cm, right=1cm, footskip=1.0cm]{geometry}
+\usepackage{titlesec, tabularx, array, enumitem, fontawesome5, amsmath}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage[
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{paracol, changepage}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.2cm}
+\setcounter{secnumdepth}{0}
+\renewcommand\labelitemi{\small$\bullet$}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{0pt}{5pt}{5pt}
+
+\newenvironment{onecolentry}{\begin{adjustwidth}{0pt}{0pt}}{\end{adjustwidth}}
+\newenvironment{highlights}{\begin{itemize}[leftmargin=10pt, itemsep=-2pt]}{\end{itemize}}
+
+% ----- Header -----
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Pranav Kumar}}\\[4pt]
+    Virginia, USA \quad \textbar \quad
+    \href{mailto:pranavkumar@vt.edu}{pranavkumar@vt.edu} \quad \textbar \quad
+    +1-540-934-8078\\
+    \href{https://pranav083.github.io}{pranav083.github.io} \quad \textbar \quad
+    \href{https://linkedin.com/in/pranav083}{linkedin.com/in/pranav083} \quad \textbar \quad
+    \href{https://github.com/pranav083}{github.com/pranav083}
+\end{center}
+
+% ----- Summary -----
+\section{Summary}
+\begin{onecolentry}
+    Embedded Systems Engineer with 4.5+ years of experience building high-performance embedded software 
+    for safety-critical systems in robotics and autonomous applications. Expertise in C/C++, RTOS, kernel development, 
+    and real-time firmware optimization. Recognized for collaborative problem-solving, clear technical communication, 
+    and contributing to cross-functional teams to deliver scalable, secure, and fault-tolerant embedded solutions.
+\end{onecolentry}
+
+% ----- Skills -----
+\section{Technical Skills}
+\begin{onecolentry}
+\textbf{Languages:} C, C++, Embedded C, Python, Linux, Script, Device Tree, Compilers, GDB, Makefile, JTAG,\\
+\textbf{Hardware Protocols:} ARM, I2C, SPI, CAN, UART, BeagleBone, Raspberry Pi\\
+\textbf{Developer Tools:} Git, Github CI/CD Docker,  RTOS(FreeRTOS / Zephyr), FreeRTOS, AUTOSAR, LLVM\\
+\textbf{Hardware:} STM32, TI, Steppers, BLDC, FOC, Xilinx FPGA Spartan\\
+\textbf{Familiar:} Algorithms, \LaTeX, Parallel Programming, Rust, OTA updates, BLE, Wireless Protocols\\
+\end{onecolentry}
+
+% ----- Education -----
+\section{Education}
+\begin{onecolentry}
+\textbf{Virginia Tech}, MS in Computer Engineering (GPA: 3.9/4.0) \hfill \textit{ Aug 2024 -- May 2026}\\
+Coursework: Compiler Optimization, Multiprocessor Programming, compiler Optimization, Linux Kernel Programming
+
+\vspace{6pt}
+\textbf{UIET, Panjab University}, B.E. in Electronics and Communication Engineering \hfill \textit{May 2016 -- Sep 2020}
+\end{onecolentry}
+
+% ----- Experience -----
+\section{Work Experience}
+\begin{onecolentry}
+
+\textbf{Graduate Student Researcher}, SSRG Lab @Virginia Tech \hfill \textit{Dec 2024 -- Present}
+\begin{highlights}
+    \item Developing an indirect call mechanism for binary decompilation under Prof. Binoy Ravindran, Finding security vulnerabilties in binary code through indirect jump calls.
+    \item Exploring kernel-level instrumentation and low-level code optimization, enhancing system performance and efficiency.
+\end{highlights}
+
+\textbf{Embedded System Engineer}, ARTPARK @IISc Bangalore \hfill \textit{May 2023 -- Jul 2024}
+\begin{highlights}
+    \item Designed low-level drivers and communication stacks for quadruped robotics, boosting system and communication efficiency.
+    \item Developed custom firmware for motor controllers (FOC, BLDC), optimizing real-time performance.
+    \item Implemented high-speed CAN protocols for real-time control in embedded Linux systems, which increased the feedback speed by 50\%.
+\end{highlights}
+
+\textbf{Embedded System Engineer}, Flux Auto Pvt. Ltd. \hfill \textit{Jun 2021 -- Mar 2023}
+\begin{highlights}
+    \item Enhanced low-level peripheral drivers for autonomous vehicle kits (tractors, industrial machinery), boosting efficiency by 50\%.
+    \item Designed real-time firmware for multi-node CAN networks, ensuring robust distributed control.
+    \item Implemented an RTOS-based firmware and system architecture, reducing downtime by 45\% and improving system control.
+    \item Developed automated testing frameworks for embedded systems using Python and integrated CI/CD pipelines to streamline firmware delivery.
+\end{highlights}
+
+\textbf{Embedded Firmware Engineer}, Futuristic Labs Pvt. Ltd. \hfill \textit{Jan 2020 -- May 2021}
+\begin{highlights}
+    \item Developed device drivers and firmware abstraction layers for IoT-integrated autonomous systems, enhancing system performance and reliability.
+    \item Developed kernel-space and user-space communication bridges for real-time data exchange.
+    \item Optimized interrupt-driven firmware to enhance system responsiveness and efficiency, significantly improving processing speed by 30\% and reducing latency by 50\%.
+\end{highlights}
+
+\end{onecolentry}
+
+% ----- Projects -----
+
+\section{Projects}
+\begin{onecolentry}
+\textbf{Rust Language Memory Reclamation Technique Comparision }, Virginia Tech \hfill \textit{Aug 2024 -- Dec 2024}
+\begin{highlights}
+    \item EBR, and HP in Rust for embedded systems; implemented a custom allocator and benchmarked performance on it .
+\end{highlights}
+\textbf{Google Summer of Code (GSOC)}, BeagleBoard.Org \hfill \textit{Jun 2019 -- Aug 2019}
+
+\begin{highlights}
+    \item Using BeagleBone and 74hck299 shift Register,a reference design for bi-directional communication for multiple peripherals.
+\end{highlights}
+\end{onecolentry}
+
+% ----- Achievements -----
+\section{Achievements And Awards}
+\begin{onecolentry}
+\begin{highlights}
+    \item 2019 - ROSCon-19 Scholarship: Scholarship Holder at Robot Operating System Conference ROSCon-19, Macau, China.
+    \item 2019 - Excellence in Technology Award: Awardee for excellence in Technology field by Mrs. Kirron Kher (MP, Chandigarh).
+    \item 2019 - Team leader of 4 help to got 1st Award at Design and Idea Competition by IIC, Panjab University at Chandigarh.
+    \item 2019 - Mentor of winning team of 8 people at Smart India Hackathon-2019 by Kokuyo Camlin at IIT Hyd.
+    \item 2021-2022 - Best Employee Awards: Three times winner of Best Employee per Quarter at Flux Auto.
+\end{highlights}
+\end{onecolentry}
+
+\end{document}

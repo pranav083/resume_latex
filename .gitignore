@@ -1,0 +1,17 @@
+rendercv-engineeringresumes-theme.pdf
+# include unwanted files form latex
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synct
+*.synctex.gz
+
+cover_letter/
+good_resume/
